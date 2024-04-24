@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/donaldo9603/workspace/numeric/train_ae_model.py", line 104, in <module>
+    main(args)
+  File "/home/donaldo9603/workspace/numeric/train_ae_model.py", line 55, in main
+    train_data=Dataset.from_dict(train_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 897, in from_dict
+    pa_table = InMemoryTable.from_pydict(mapping=mapping)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/datasets/table.py", line 785, in from_pydict
+    return cls(pa.Table.from_pydict(*args, **kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3725, in pyarrow.lib.Table.from_pydict
+  File "pyarrow/table.pxi", line 5255, in pyarrow.lib._from_pydict
+  File "pyarrow/table.pxi", line 3674, in pyarrow.lib.Table.from_arrays
+  File "pyarrow/table.pxi", line 2837, in pyarrow.lib.Table.validate
+  File "pyarrow/error.pxi", line 100, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Column 1 named text expected length 0 but got length 6057

@@ -1,0 +1,491 @@
+2023-10-05 22:13:02,568 INFO    StreamThr :2883381 [internal.py:wandb_internal():86] W&B internal server running at pid: 2883381, started at: 2023-10-05 22:13:02.566048
+2023-10-05 22:13:02,570 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status
+2023-10-05 22:13:02,575 INFO    WriterThread:2883381 [datastore.py:open_for_write():85] open: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/run-g2j63ovz.wandb
+2023-10-05 22:13:02,577 DEBUG   SenderThread:2883381 [sender.py:send():380] send: header
+2023-10-05 22:13:02,578 DEBUG   SenderThread:2883381 [sender.py:send():380] send: run
+2023-10-05 22:13:03,137 INFO    SenderThread:2883381 [dir_watcher.py:__init__():211] watching files in: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files
+2023-10-05 22:13:03,137 INFO    SenderThread:2883381 [sender.py:_start_run_threads():1122] run started: g2j63ovz with start time 1696511582.566181
+2023-10-05 22:13:03,279 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: check_version
+2023-10-05 22:13:03,280 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: check_version
+2023-10-05 22:13:03,393 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: run_start
+2023-10-05 22:13:03,426 DEBUG   HandlerThread:2883381 [system_info.py:__init__():32] System info init
+2023-10-05 22:13:03,426 DEBUG   HandlerThread:2883381 [system_info.py:__init__():47] System info init done
+2023-10-05 22:13:03,427 INFO    HandlerThread:2883381 [system_monitor.py:start():181] Starting system monitor
+2023-10-05 22:13:03,427 INFO    SystemMonitor:2883381 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-05 22:13:03,428 INFO    HandlerThread:2883381 [system_monitor.py:probe():201] Collecting system info
+2023-10-05 22:13:03,429 INFO    SystemMonitor:2883381 [interfaces.py:start():190] Started cpu monitoring
+2023-10-05 22:13:03,430 INFO    SystemMonitor:2883381 [interfaces.py:start():190] Started disk monitoring
+2023-10-05 22:13:03,432 INFO    SystemMonitor:2883381 [interfaces.py:start():190] Started gpu monitoring
+2023-10-05 22:13:03,433 INFO    SystemMonitor:2883381 [interfaces.py:start():190] Started memory monitoring
+2023-10-05 22:13:03,435 INFO    SystemMonitor:2883381 [interfaces.py:start():190] Started network monitoring
+2023-10-05 22:13:03,450 DEBUG   HandlerThread:2883381 [system_info.py:probe():196] Probing system
+2023-10-05 22:13:03,452 DEBUG   HandlerThread:2883381 [gitlib.py:_init_repo():53] git repository is invalid
+2023-10-05 22:13:03,453 DEBUG   HandlerThread:2883381 [system_info.py:probe():244] Probing system done
+2023-10-05 22:13:03,453 DEBUG   HandlerThread:2883381 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-153-generic-x86_64-with-glibc2.31', 'python': '3.11.5', 'heartbeatAt': '2023-10-05T13:13:03.451419', 'startedAt': '2023-10-05T13:13:02.547454', 'docker': None, 'cuda': None, 'args': ('--train_dir', '/home/donaldo9603/workspace/numeric/data/ours/only_nq/numeric_train.jsonl', '--validation_dir', '/home/donaldo9603/workspace/numeric/data/ours/only_nq/numeric_dev.jsonl', '--output_dir', '/home/donaldo9603/workspace/BEM/checkpoint/checkpoint-33979', '--batch_size', '64', '--model_name', 'microsoft/deberta-v3-base', '--epoch', '50'), 'state': 'running', 'program': '/home/donaldo9603/workspace/numeric/train_ae_model.py', 'codePathLocal': 'train_ae_model.py', 'codePath': 'train_ae_model.py', 'host': 'a5k04', 'username': 'donaldo9603', 'executable': '/home/donaldo9603/.conda/envs/numeric/bin/python', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1.356875, 'min': 1000.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 0.999, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.939, 'min': 1000.0, 'max': 3200.0}, {'current': 1.939, 'min': 1000.0, 'max': 3200.0}, {'current': 1.939, 'min': 1000.0, 'max': 3200.0}, {'current': 1.939, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.324, 'min': 1000.0, 'max': 3200.0}, {'current': 1.903, 'min': 1000.0, 'max': 3200.0}, {'current': 1.647, 'min': 1000.0, 'max': 3200.0}, {'current': 1.658, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.75, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.001, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.94, 'min': 1000.0, 'max': 3200.0}, {'current': 1.94, 'min': 1000.0, 'max': 3200.0}, {'current': 1.93, 'min': 1000.0, 'max': 3200.0}, {'current': 1.94, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.163, 'min': 1000.0, 'max': 3200.0}, {'current': 2.262, 'min': 1000.0, 'max': 3200.0}, {'current': 1.423, 'min': 1000.0, 'max': 3200.0}, {'current': 1.338, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.002, 'min': 1000.0, 'max': 3200.0}, {'current': 0.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2.3, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}, {'current': 1.0, 'min': 1000.0, 'max': 3200.0}], 'disk': {'/': {'total': 885.406494140625, 'used': 746.7600746154785}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 24146608128}], 'memory': {'total': 251.5560760498047}}
+2023-10-05 22:13:03,453 INFO    HandlerThread:2883381 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-05 22:13:03,453 INFO    HandlerThread:2883381 [system_monitor.py:probe():214] Publishing system info
+2023-10-05 22:13:03,454 DEBUG   HandlerThread:2883381 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-05 22:13:03,457 DEBUG   HandlerThread:2883381 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-05 22:13:03,458 DEBUG   HandlerThread:2883381 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-05 22:13:04,145 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_created():271] file/dir created: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/conda-environment.yaml
+2023-10-05 22:13:04,146 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_created():271] file/dir created: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/requirements.txt
+2023-10-05 22:13:15,154 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/conda-environment.yaml
+2023-10-05 22:13:15,302 DEBUG   HandlerThread:2883381 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-05 22:13:15,305 INFO    HandlerThread:2883381 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-05 22:13:15,312 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:15,312 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-05 22:13:15,313 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:15,313 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-05 22:13:15,314 DEBUG   SenderThread:2883381 [sender.py:send():380] send: files
+2023-10-05 22:13:15,314 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-05 22:13:15,319 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:13:15,320 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:13:15,320 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:13:15,625 DEBUG   SenderThread:2883381 [sender.py:send():380] send: telemetry
+2023-10-05 22:13:15,626 DEBUG   SenderThread:2883381 [sender.py:send():380] send: config
+2023-10-05 22:13:16,155 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_created():271] file/dir created: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-metadata.json
+2023-10-05 22:13:16,167 INFO    wandb-upload_0:2883381 [upload_job.py:push():131] Uploaded file /tmp/tmpyg1g6nezwandb/6cmpf8kj-wandb-metadata.json
+2023-10-05 22:13:17,157 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_created():271] file/dir created: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:18,599 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:19,159 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:20,359 DEBUG   SenderThread:2883381 [sender.py:send():380] send: config
+2023-10-05 22:13:20,361 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:13:20,361 DEBUG   SenderThread:2883381 [sender.py:send():380] send: telemetry
+2023-10-05 22:13:20,361 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:13:20,361 WARNING SenderThread:2883381 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-10-05 22:13:21,161 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:23,163 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:23,741 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:25,164 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:27,166 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:28,814 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:29,168 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:30,320 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:13:30,320 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:13:30,321 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:13:31,170 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:33,172 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:34,055 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:35,174 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml
+2023-10-05 22:13:35,174 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:37,175 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:39,177 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:39,387 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:41,178 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:43,180 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:44,630 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:45,181 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:45,318 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:13:45,319 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:13:45,320 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:13:47,183 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:49,185 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:49,834 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:51,186 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:53,188 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:54,905 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:13:55,190 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:57,192 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:59,194 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:13:59,913 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:00,318 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:14:00,319 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:14:00,320 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:14:01,195 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:03,198 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:03,436 DEBUG   SystemMonitor:2883381 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-05 22:14:03,438 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:14:05,107 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:05,200 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:07,201 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:09,203 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:10,291 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:11,204 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:13,206 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:15,208 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:15,319 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:14:15,320 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:14:15,320 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:14:15,634 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:17,209 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:19,211 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:20,779 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:21,213 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:23,098 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:14:23,103 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,104 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,104 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,105 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,105 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,105 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:14:23,106 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:14:23,106 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:14:23,108 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:14:23,215 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:23,216 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_created():271] file/dir created: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:14:25,217 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:26,111 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:30,482 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:14:30,510 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:14:30,510 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:14:31,365 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:33,225 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:33,440 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:14:35,226 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:36,565 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:37,228 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml
+2023-10-05 22:14:37,229 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:39,229 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:41,231 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:41,981 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:43,233 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:45,235 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:45,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:14:45,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:14:45,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:14:47,034 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:47,237 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:49,239 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:51,240 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:52,036 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:53,242 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:55,244 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:57,152 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:14:57,246 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:14:59,248 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:00,338 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:15:00,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:15:00,339 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:15:01,250 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:02,173 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:03,251 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:03,440 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:15:05,253 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:07,205 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:07,254 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:09,256 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:11,258 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:12,268 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:13,259 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:15,261 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:15,338 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:15:15,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:15:15,339 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:15:17,262 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:17,351 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:19,264 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:21,265 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:22,357 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:23,267 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:25,269 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:27,270 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:27,402 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:29,272 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:30,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:15:30,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:15:30,340 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:15:31,274 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:32,489 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:33,275 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:33,442 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:15:35,277 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:35,577 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:15:35,580 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:15:35,581 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:15:35,583 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:15:36,278 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:15:37,279 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:37,585 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:42,586 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:45,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:15:45,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:15:45,340 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:15:46,206 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:15:46,208 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:15:46,209 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:15:46,209 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:15:46,210 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:15:46,214 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:15:46,287 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:15:47,288 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:47,634 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:49,291 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:51,292 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:52,651 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:53,294 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:55,295 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:57,297 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:15:57,869 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:15:59,299 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:00,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:16:00,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:16:00,340 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:16:01,301 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:03,030 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:03,303 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:03,443 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:16:05,305 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:07,308 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:08,046 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:09,310 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml
+2023-10-05 22:16:09,310 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:11,312 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:13,314 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:13,563 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:15,316 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:15,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:16:15,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:16:15,340 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:16:17,317 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:18,586 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:19,319 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:21,321 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:23,323 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:23,648 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:25,325 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:27,327 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:28,740 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:29,328 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:30,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:16:30,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:16:30,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:16:31,331 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:33,333 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:33,445 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:16:33,783 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:35,335 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:37,336 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:38,813 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:39,338 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:41,339 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:43,341 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:43,927 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:45,339 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:16:45,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:16:45,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:16:45,344 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:47,346 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:48,868 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:16:48,871 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:16:48,872 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:16:48,874 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:16:49,348 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:49,349 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:16:49,876 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:51,351 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:54,877 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:16:59,359 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:16:59,935 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:00,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:17:00,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:17:00,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:17:01,361 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:03,362 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:03,446 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:17:05,137 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:05,364 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:07,366 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:09,367 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:10,373 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:11,370 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:13,371 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:15,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:17:15,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:17:15,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:17:15,373 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:15,620 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:17,375 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:19,377 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:20,799 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:21,379 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:23,381 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:25,383 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:25,801 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:27,385 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:29,387 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:30,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:17:30,341 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:17:30,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:17:30,901 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:31,389 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:33,391 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:33,447 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:17:35,393 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:36,074 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:37,395 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:39,396 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:41,325 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:41,398 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:43,399 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:45,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:17:45,341 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:17:45,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:17:45,401 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:46,355 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:47,402 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:49,404 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:51,405 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:51,448 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:53,407 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:55,409 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:56,483 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:17:57,411 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:17:59,413 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:00,340 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-05 22:18:00,341 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:18:00,341 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: stop_status
+2023-10-05 22:18:01,415 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:01,599 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:18:01,820 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:18:01,823 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:18:01,824 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:18:01,826 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:18:02,416 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:18:03,418 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:03,449 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:18:07,451 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:18:10,585 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-05 22:18:10,589 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:18:10,590 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:18:10,590 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:18:10,591 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:18:10,591 DEBUG   SenderThread:2883381 [sender.py:send():380] send: metric
+2023-10-05 22:18:10,591 DEBUG   SenderThread:2883381 [sender.py:send():380] send: history
+2023-10-05 22:18:10,591 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: summary_record
+2023-10-05 22:18:10,593 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:18:10,692 DEBUG   SenderThread:2883381 [sender.py:send():380] send: exit
+2023-10-05 22:18:10,693 INFO    SenderThread:2883381 [sender.py:send_exit():585] handling exit code: 0
+2023-10-05 22:18:10,694 INFO    SenderThread:2883381 [sender.py:send_exit():587] handling runtime: 307
+2023-10-05 22:18:10,694 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:18:10,695 INFO    SenderThread:2883381 [sender.py:send_exit():593] send defer
+2023-10-05 22:18:10,695 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,695 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-05 22:18:10,696 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,696 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-05 22:18:10,696 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 1
+2023-10-05 22:18:10,696 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,696 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-05 22:18:10,697 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,697 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-05 22:18:10,697 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 2
+2023-10-05 22:18:10,697 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,697 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-05 22:18:10,697 INFO    HandlerThread:2883381 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-05 22:18:10,698 DEBUG   SystemMonitor:2883381 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-05 22:18:10,698 INFO    HandlerThread:2883381 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-05 22:18:10,698 DEBUG   SystemMonitor:2883381 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-05 22:18:10,699 INFO    HandlerThread:2883381 [interfaces.py:finish():202] Joined disk monitor
+2023-10-05 22:18:10,710 INFO    HandlerThread:2883381 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-05 22:18:10,711 INFO    HandlerThread:2883381 [interfaces.py:finish():202] Joined memory monitor
+2023-10-05 22:18:10,712 INFO    HandlerThread:2883381 [interfaces.py:finish():202] Joined network monitor
+2023-10-05 22:18:10,712 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,713 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-05 22:18:10,713 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 3
+2023-10-05 22:18:10,713 DEBUG   SenderThread:2883381 [sender.py:send():380] send: stats
+2023-10-05 22:18:10,713 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,714 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-05 22:18:10,715 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,715 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-05 22:18:10,715 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 4
+2023-10-05 22:18:10,715 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,715 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-05 22:18:10,716 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,716 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-05 22:18:10,716 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 5
+2023-10-05 22:18:10,716 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,717 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-05 22:18:10,717 DEBUG   SenderThread:2883381 [sender.py:send():380] send: summary
+2023-10-05 22:18:10,718 INFO    SenderThread:2883381 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-05 22:18:10,719 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,719 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-05 22:18:10,719 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 6
+2023-10-05 22:18:10,720 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,720 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-05 22:18:10,720 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,721 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-05 22:18:10,726 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: status_report
+2023-10-05 22:18:10,985 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 7
+2023-10-05 22:18:10,986 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:10,986 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-05 22:18:10,987 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:10,987 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-05 22:18:11,429 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml
+2023-10-05 22:18:11,429 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:11,430 INFO    Thread-12 :2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:18:11,692 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-05 22:18:13,196 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 8
+2023-10-05 22:18:13,196 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: poll_exit
+2023-10-05 22:18:13,196 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:13,197 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-05 22:18:13,197 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:13,198 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-05 22:18:13,198 INFO    SenderThread:2883381 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-05 22:18:13,202 INFO    SenderThread:2883381 [job_builder.py:_get_source_type():404] no source found
+2023-10-05 22:18:13,203 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 9
+2023-10-05 22:18:13,203 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:13,203 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-05 22:18:13,204 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:13,204 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-05 22:18:13,205 INFO    SenderThread:2883381 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-05 22:18:13,431 INFO    SenderThread:2883381 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:13,432 INFO    SenderThread:2883381 [dir_watcher.py:finish():388] scan: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files
+2023-10-05 22:18:13,433 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/conda-environment.yaml conda-environment.yaml
+2023-10-05 22:18:13,433 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/requirements.txt requirements.txt
+2023-10-05 22:18:13,439 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json wandb-summary.json
+2023-10-05 22:18:13,444 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-metadata.json wandb-metadata.json
+2023-10-05 22:18:13,449 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml config.yaml
+2023-10-05 22:18:13,450 INFO    SenderThread:2883381 [dir_watcher.py:finish():402] scan save: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log output.log
+2023-10-05 22:18:13,455 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 10
+2023-10-05 22:18:13,460 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:13,461 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-05 22:18:13,461 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:13,462 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-05 22:18:13,462 INFO    SenderThread:2883381 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-05 22:18:14,055 INFO    wandb-upload_1:2883381 [upload_job.py:push():131] Uploaded file /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/requirements.txt
+2023-10-05 22:18:14,062 INFO    wandb-upload_0:2883381 [upload_job.py:push():131] Uploaded file /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/conda-environment.yaml
+2023-10-05 22:18:14,240 INFO    wandb-upload_2:2883381 [upload_job.py:push():131] Uploaded file /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/wandb-summary.json
+2023-10-05 22:18:14,252 INFO    wandb-upload_3:2883381 [upload_job.py:push():131] Uploaded file /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/config.yaml
+2023-10-05 22:18:14,264 INFO    wandb-upload_4:2883381 [upload_job.py:push():131] Uploaded file /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/files/output.log
+2023-10-05 22:18:14,465 INFO    Thread-11 (_thread_body):2883381 [sender.py:transition_state():613] send defer: 11
+2023-10-05 22:18:14,466 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:14,466 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-05 22:18:14,467 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:14,467 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-05 22:18:14,468 INFO    SenderThread:2883381 [file_pusher.py:join():181] waiting for file pusher
+2023-10-05 22:18:14,468 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 12
+2023-10-05 22:18:14,468 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:14,469 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-05 22:18:14,469 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:14,469 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-05 22:18:14,470 INFO    SenderThread:2883381 [file_stream.py:finish():595] file stream finish called
+2023-10-05 22:18:15,475 INFO    SenderThread:2883381 [file_stream.py:finish():599] file stream finish is done
+2023-10-05 22:18:15,476 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 13
+2023-10-05 22:18:15,476 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:15,477 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-05 22:18:15,477 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:15,478 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-05 22:18:15,478 INFO    SenderThread:2883381 [sender.py:transition_state():613] send defer: 14
+2023-10-05 22:18:15,479 DEBUG   SenderThread:2883381 [sender.py:send():380] send: final
+2023-10-05 22:18:15,479 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: defer
+2023-10-05 22:18:15,479 DEBUG   SenderThread:2883381 [sender.py:send():380] send: footer
+2023-10-05 22:18:15,479 INFO    HandlerThread:2883381 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-05 22:18:15,480 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: defer
+2023-10-05 22:18:15,480 INFO    SenderThread:2883381 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-05 22:18:15,481 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-05 22:18:15,481 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: server_info
+2023-10-05 22:18:15,482 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: poll_exit
+2023-10-05 22:18:15,482 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-05 22:18:15,483 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: server_info
+2023-10-05 22:18:15,483 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-05 22:18:15,489 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-05 22:18:15,490 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: job_info
+2023-10-05 22:18:15,678 DEBUG   SenderThread:2883381 [sender.py:send_request():407] send_request: job_info
+2023-10-05 22:18:15,679 INFO    MainThread:2883381 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-10-05 22:18:15,680 INFO    MainThread:2883381 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-10-05 22:18:15,681 INFO    MainThread:2883381 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-10-05 22:18:15,682 DEBUG   HandlerThread:2883381 [handler.py:handle_request():144] handle_request: shutdown
+2023-10-05 22:18:15,682 INFO    HandlerThread:2883381 [handler.py:finish():844] shutting down handler
+2023-10-05 22:18:16,490 INFO    WriterThread:2883381 [datastore.py:close():294] close: /home/donaldo9603/workspace/numeric/wandb/run-20231005_221302-g2j63ovz/run-g2j63ovz.wandb
+2023-10-05 22:18:16,679 INFO    SenderThread:2883381 [sender.py:finish():1534] shutting down sender
+2023-10-05 22:18:16,680 INFO    SenderThread:2883381 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-05 22:18:16,680 INFO    SenderThread:2883381 [file_pusher.py:join():181] waiting for file pusher

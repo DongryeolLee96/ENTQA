@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/donaldo9603/workspace/numeric/train_ae_model.py", line 111, in <module>
+    main(args)
+  File "/home/donaldo9603/workspace/numeric/train_ae_model.py", line 73, in main
+    tokenizer=AutoTokenizer.from_pretrained('microsoft/deberta-v3-base')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 745, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1854, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2017, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/transformers/models/deberta_v2/tokenization_deberta_v2_fast.py", line 133, in __init__
+    super().__init__(
+  File "/home/donaldo9603/.conda/envs/numeric/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 120, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of:
+(1) a `tokenizers` library serialization file,
+(2) a slow tokenizer instance to convert or
+(3) an equivalent slow tokenizer class to instantiate and convert.
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
