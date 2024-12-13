@@ -1,7 +1,7 @@
 # Entity driven expansion README
 
 This is the repository documenting the paper
-[Return of EM: Entity-driven Answer Set Expansion for QA Evaluation] (https://arxiv.org/abs/2404.15650)
+[Return of EM: Entity-driven Answer Set Expansion for QA Evaluation](https://arxiv.org/abs/2404.15650)
 by Dongryeol Lee, Minwoo Lee, Kyungmin Min, Joonsuk Park, and Kyomin Jung.
 
 ![Main Figure](image/figure.png)
@@ -21,7 +21,7 @@ by Dongryeol Lee, Minwoo Lee, Kyungmin Min, Joonsuk Park, and Kyomin Jung.
 ```
 
   Here is an example of a data point:
-```json
+```
 {
 'question': 'who got the first nobel prize in physics',
  'golden_answer': ['Wilhelm Conrad Röntgen'],
@@ -54,29 +54,74 @@ The size of our dataset is detailed in the table below:
  |ChatGPT-3.5 |3020|1938|
  |ChatGPT-4 |3020|1938|
  |Bing Chat |3020|1938|
-We only use data instances where improper is set to False from [EVOUNA] (https://proceedings.neurips.cc/paper_files/paper/2023/file/f323d594aa5d2c68154433a131c07959-Paper-Datasets_and_Benchmarks.pdf)
+
+We only use data instances where improper is set to False from [EVOUNA](https://proceedings.neurips.cc/paper_files/paper/2023/file/f323d594aa5d2c68154433a131c07959-Paper-Datasets_and_Benchmarks.pdf)
 
 ## Entity type Statistics 
 |models | Natural Questions| TriviaQA |
  |------------------------------|------------------------------|------------------------------|
- |DATE |3020|1938|
- |CARDINAL |3020|1938|
- |QUANTITY |3020|1938|
- |ORDINAL |3020|1938|
- |MONEY |3020|1938|
- |PERCENT |3020|1938|
- |TIME |3020|1938|
- |PERSON |3020|1938|
- |GPE |3020|1938|
- |ORG |3020|1938|
- |NORP |3020|1938|
- |LOC |3020|1938|
- |WORK_OF_ART |3020|1938|
- |FAC |3020|1938|
- |PRODUCT |3020|1938|
- |EVENT |3020|1938|
- |LAW |3020|1938|
- |LANGUAGE |3020|1938|
- |Unknown |3020|1938|
+ |DATE |499|52|
+ |CARDINAL |169|105|
+ |QUANTITY |19|1|
+ |ORDINAL |13|3|
+ |MONEY |11|4|
+ |PERCENT |10|2|
+ |TIME |7|5|
+ |PERSON |1035|744|
+ |GPE |288|296|
+ |ORG |198|380|
+ |NORP |80|58|
+ |LOC |46|32|
+ |WORK_OF_ART |14|17|
+ |FAC |17|17|
+ |PRODUCT |13|21|
+ |EVENT |8|9|
+ |LAW |4|2|
+ |LANGUAGE |3|1 |
+ |Unknown |586|189|
  |Total |3020|1938|
- 
+
+ # Citation
+
+ If you find the our dataset useful, please cite our paper:
+```bibtex
+@article{
+lee2024return,
+  title={Return of EM: Entity-driven Answer Set Expansion for QA Evaluation},
+  author={Lee, Dongryeol and Lee, Minwoo and Min, Kyungmin and Park, Joonsuk and Jung, Kyomin},
+  journal={arXiv preprint arXiv:2404.15650},
+  year={2024}
+}
+```
+
+Please also make sure to credit and cite the creators of EVOUNA, Natural Questions and TriviaQA, the dataset which we built ours off of:
+```bibtex
+@inproceedings{
+  wang2023evaluating,
+  title={Evaluating Open-{QA} Evaluation},
+  author={Cunxiang Wang and Sirui Cheng and Qipeng Guo and Yuanhao Yue and Bowen Ding and Zhikun Xu and Yidong Wang and Xiangkun Hu and Zheng Zhang and Yue Zhang},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2023},
+  url={https://openreview.net/forum?id=UErNpveP6R}
+}
+
+
+@article{
+kwiatkowski2019natural,
+  title={ Natural questions: a benchmark for question answering research},
+  author={ Kwiatkowski, Tom and Palomaki, Jennimaria and Redfield, Olivia and Collins, Michael and Parikh, Ankur and Alberti, Chris and Epstein, Danielle and Polosukhin, Illia and Devlin, Jacob and Lee, Kenton and others },
+  journal={ Transactions of the Association for Computational Linguistics },
+  year={ 2019 }
+}
+
+
+@inproceedings{
+joshi2017triviaqa,
+  title={TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension},
+  author={Joshi, Mandar and Choi, Eunsol and Weld, Daniel S and Zettlemoyer, Luke},
+  booktitle={Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={1601--1611},
+  year={2017}
+}
+```
+
